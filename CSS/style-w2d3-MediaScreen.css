@@ -73,13 +73,18 @@
     #main-content {
         /* Positioning */
         float: left;
+        padding: 50px;
+        margin: 10px;
+
       
         /* Visual */
         background: pink;
       }
       #sidebar {
         /* Positioning */
-        float: inline-end;
+        float: left;
+        margin:10px;
+        
       
         /* Visual */
         background:lightblue;
