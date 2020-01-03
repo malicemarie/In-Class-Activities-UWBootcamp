@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var myQuestions = [
+            { q: 'Do you like coding?', a: true },
+            { q: 'Are you good at coding?', a: false },
+            { q: 'Are you from the PNW?', a: true },
+            { q: 'Do you have a pet?', a: true },
+
+        ];
+
+        for (var i = 0; i < myQuestions.length; i++) {
+
+            var myQuestions = myQuestions[i];
+            
+            var answer = confirm(myQuestions.q);
+
+
+            if (answer === myQuestions.a) {
+                alert('Correct!')
+            }
+            else {
+                alert('WRONG!')
+            }
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
