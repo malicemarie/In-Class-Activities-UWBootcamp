@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Favorite Movies</title>
+    <style type="text/css">
+      button,
+      div,
+      form,
+      input {
+        margin: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Movie Search</h1>
+
+      <!-- Movies will get dumped here -->
+      <div id="buttons-view"></div>
+
+      <form id="movie-form">
+        <label for="movie-input">Add a Movie, Yo!</label>
+        <input type="text" id="movie-input" /><br />
+
+        <!-- Button triggers new movie to be added -->
+        <input id="add-movie" type="submit" value="Add a Movie, Yo!" />
+      </form>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+        // Initial array of movies
+        var movies = [
+          "The Matrix",
+          "The Notebook",
+          "Mr. Nobody",
+          "The Lion King"
+        ];
+
+        // Function for displaying movie data
+        function renderButtons() {
+          $("buttons-view").empty();
+          var movieButton = $("<button>");
+          movieButton.text(
+            $("#movie-input")
+              .val()
+              .trim()
+          );
+          movies.push(movieButton);
+          var buttonsView = $("#buttons-view");
+          buttonsView.append(movieButton);
+        }
+
+        // This function handles events where one button is clicked
+        $("#add-movie").on("click", function(event) {
+          event.preventDefault();
+          // YOUR CODE GOES HERE
+        });
+
+        // Calling the renderButtons function to display the initial list of movies
+        $("#add-movie").on("click", renderButtons);
+      </script>
+    </div>
+  </body>
+</html>
