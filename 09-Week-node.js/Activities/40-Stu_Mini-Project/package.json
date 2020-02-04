@@ -1,0 +1,19 @@
+{
+  "name": "40-Stu_Mini-Project",
+  "version": "1.0.0",
+  "description": "In this activity you will build a command line tool that generates an HTML portfolio page from user input.",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "fs": "0.0.1-security",
+    "inquirer": "^7.0.4",
+    "util": "^0.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

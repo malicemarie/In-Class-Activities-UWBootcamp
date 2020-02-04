@@ -1,0 +1,21 @@
+{
+  "name": "first-node-project",
+  "version": "1.0.0",
+  "description": "My first Node package",
+  "main": "index.js",
+  "scripts": {
+    "test": "test command"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/malicemarie/In-Class-Activities"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Marie Lenac",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^7.0.3"
+  }
+}
