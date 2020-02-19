@@ -1,0 +1,16 @@
+{
+  "name": "10-greatbay",
+  "version": "1.0.0",
+  "description": "- Within your groups you are going to be creating a Node application called \"Great-Bay\" which allows users to create and bid on assorted items, tasks, jobs, or projects.",
+  "main": "bidding.js",
+  "dependencies": {
+    "inquire": "^0.4.8",
+    "inquirer": "^7.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
